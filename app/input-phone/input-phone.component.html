@@ -1,0 +1,5 @@
+<div class="input-wrap">
+	<input #input matInput [attr.maxlength]="MaxLength" [placeholder]="PlaceHolder ? PlaceHolder : ''"
+      [readonly]="ReadOnly" [type]="type ? type: 'text'"
+      (input)="onInputChange($event)" (blur)="onTouched()">
+</div>

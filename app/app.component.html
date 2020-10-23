@@ -1,0 +1,13 @@
+<div class="container mt-5 mb-5 pl-5 ">
+	<div class="row">
+		<form [formGroup]="form">
+			<div class="form-group">
+				<label for="phone-number">My Number</label>
+				<app-input-phone formControlName="phone"></app-input-phone>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<div>Original Phone value: {{form.controls.phone.value}}</div>
+	</div>
+</div>
